@@ -1,14 +1,13 @@
-import fs from "fs";
-import http from "http";
-import {fileURLToPath} from 'url';
-import path, {dirname} from "path";
-import {getRoutes, postRoutes} from "./routes.js";
-
-import {pageNotFound, showImage} from "./Controllers/employeeControllers.js";
+import fs from 'node:fs';
+import http from 'node:http';
+import path, {dirname} from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {pageNotFound, showImage} from './Controllers/employeeControllers.js';
+import {getRoutes, postRoutes} from './routes.js';
 
 const __filename = fileURLToPath(import.meta.url);
 export const __dirname = dirname(__filename);
-export const FILE_PATH = path.join(__dirname, "employees.json");
+export const FILE_PATH = path.join(__dirname, 'employees.json');
 
 if (!fs.existsSync(FILE_PATH)) {
   fs.writeFileSync(FILE_PATH, JSON.stringify([]));
@@ -17,12 +16,12 @@ if (!fs.existsSync(FILE_PATH)) {
 const server = http.createServer((req, res) => {
   const {url, method} = req;
   switch (method) {
-    case "GET":
+    case 'GET':
       if (getRoutes[url]) getRoutes[url](req, res);
       else if (url.startsWith('/public/')) showImage(req, res);
       else pageNotFound(req, res);
       break;
-    case "POST":
+    case 'POST':
       if (postRoutes[url]) postRoutes[url](req, res);
       else pageNotFound(req, res);
       break;

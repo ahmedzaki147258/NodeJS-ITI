@@ -1,1 +1,18 @@
-[{"id":1,"level":"Jr","yearsOfExperience":0,"name":"A7medzaki","email":"zaki@test.org","salary":1558},{"id":2,"level":"Jr","yearsOfExperience":0,"name":"A7medzaki","email":"zaki@test.org","salary":1558}]
+[
+  {
+    "id": 1,
+    "level": "Jr",
+    "yearsOfExperience": 0,
+    "name": "A7medzaki",
+    "email": "zaki@test.org",
+    "salary": 1558
+  },
+  {
+    "id": 2,
+    "level": "Jr",
+    "yearsOfExperience": 0,
+    "name": "A7medzaki",
+    "email": "zaki@test.org",
+    "salary": 1558
+  }
+]
