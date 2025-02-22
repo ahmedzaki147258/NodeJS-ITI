@@ -1,0 +1,43 @@
+[
+  {
+    "id": 1,
+    "name": "A7medzaki",
+    "email": "zaki@test.org",
+    "salary": 1558,
+    "level": "Jr",
+    "yearsOfExperience": 0
+  },
+  {
+    "id": 2,
+    "name": "A7medzaki",
+    "email": "zaki@test.org",
+    "salary": 1559,
+    "level": "Jr",
+    "yearsOfExperience": 0
+  },
+  {
+    "id": 4,
+    "name": "zakooo",
+    "email": "hassan@email.com",
+    "salary": 856,
+    "level": "Lead",
+    "yearsOfExperience": 5
+  },
+  {
+    "id": 5,
+    "level": "Sr",
+    "yearsOfExperience": 4,
+    "name": "zakooo",
+    "email": "ziko@email.com",
+    "salary": 856
+  },
+  {
+    "id": 6,
+    "level": "Mid-Level",
+    "yearsOfExperience": 3,
+    "Id": 52,
+    "name": "zakooo",
+    "email": "ziko@email.com",
+    "salary": 856
+  }
+]

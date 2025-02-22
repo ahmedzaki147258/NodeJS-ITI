@@ -1,0 +1,25 @@
+doctype html
+html
+    head
+        title Employee List
+        link(rel="stylesheet" href="/styles.css")
+    body
+        h1 Employee List
+        table
+            thead
+                tr
+                    th ID
+                    th Name
+                    th Email
+                    th Salary
+                    th Level
+                    th YearsOfExperience
+            tbody
+              each employee in employees
+                  tr
+                      td= employee.id
+                      td= employee.name
+                      td= employee.email
+                      td= employee.salary
+                      td= employee.level
+                      td= employee.yearsOfExperience
