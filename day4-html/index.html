@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Leaves</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h2>Employee Leaves</h2>
+    <label for="empId">Employee ID:</label>
+    <input type="text" id="empId" placeholder="Enter Employee ID">
+
+    <label for="status">Status:</label>
+    <select id="status">
+        <option value="">All</option>
+        <option value="inProgress">In Progress</option>
+        <option value="cancelled">Cancelled</option>
+        <option value="ended">Ended</option>
+    </select>
+
+    <button onclick="fetchLeaves()">Fetch Leaves</button>
+
+    <div id="message"></div>
+    <div id="leaves"></div>
+    <script src="./server.js"></script>
+</body>
+</html>
